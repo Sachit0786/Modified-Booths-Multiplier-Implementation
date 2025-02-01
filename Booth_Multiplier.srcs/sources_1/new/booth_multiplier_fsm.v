@@ -88,7 +88,7 @@ module booth_multiplier_fsm #(parameter DATA_WIDTH=4)
     end
     
     // Convert binary product to BCD format
-    bintobcd #(DATA_WIDTH*2) converter (
+    convert_binary_to_bcd #(DATA_WIDTH*2) converter (
         clk,
         reset,
         start_signal,
