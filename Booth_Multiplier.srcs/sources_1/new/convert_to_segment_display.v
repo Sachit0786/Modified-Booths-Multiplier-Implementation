@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module bcd_to_hex (
+module convert_to_segment_display (
     input wire [3:0] bcd_input,
     output reg [6:0] segment_display
 );
