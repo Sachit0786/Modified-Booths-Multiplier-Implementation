@@ -25,8 +25,8 @@ module display_controller #(parameter DATA_WIDTH=8)
     wire [6:0] hex_digit2;
     
     // Convert BCD input to 7-segment hex representation
-    bcd_to_hex converter0 (bcd_result[3:0], hex_digit1);
-    bcd_to_hex converter1 (bcd_result[DATA_WIDTH-1:4], hex_digit2);
+    convert_to_segment_display converter0 (bcd_result[3:0], hex_digit1);
+    convert_to_segment_display converter1 (bcd_result[DATA_WIDTH-1:4], hex_digit2);
     
     
     // Refresh counter logic to control the refresh rate of the display
