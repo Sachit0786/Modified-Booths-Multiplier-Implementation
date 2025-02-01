@@ -6,9 +6,9 @@ module display_controller #(parameter DATA_WIDTH=8)
                             input wire product_sign_bit, // Sign bit of the product (1 for negative, 0 for positive)
                             input wire [DATA_WIDTH-1:0] bcd_result, // BCD result of the multiplication
                             output wire [3:0] anode_select,
-                            output wire [6:0] segment_display1,
-                            output wire [6:0] segment_display2,
-                            output wire [6:0] segment_display3 // 7-segment display output
+                            output wire [6:0] segment_display1, // 7-segment display output 1
+                            output wire [6:0] segment_display2, // 7-segment display output 2
+                            output wire [6:0] segment_display3 // 7-segment display output 3
                             );
     
     assign anode_select = 4'b1000;
