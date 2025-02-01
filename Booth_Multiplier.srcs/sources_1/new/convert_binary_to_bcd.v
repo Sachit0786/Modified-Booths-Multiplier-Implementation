@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module bintobcd #(parameter DATA_WIDTH=8)
+module convert_binary_to_bcd #(parameter DATA_WIDTH=8)
                 (input wire clk,
                  input wire reset, // Resets the conversion process
                  input wire start_conversion, // Initiates the conversion
